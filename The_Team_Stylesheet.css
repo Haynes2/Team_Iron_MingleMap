@@ -13,13 +13,19 @@ html{
     scroll-behavior: smooth;
 }
 /* Nav Bar and logo */
-#logo_banner{
+.logo_banner{
     display: block;
     width: 100vw;
     height: auto;
-    border-color: black;
-    border-style: solid;
-    
+    text-align: center;
+    margin-top: 1vh;
+}
+.logo_banner h1{
+    padding-bottom: 1vh;
+}
+.logo_banner h4{
+    padding-bottom: 0.5vh;
+    color: #FF2400;
 }
 .nav_bar{
     display: flex;
@@ -54,5 +60,53 @@ html{
     list-style: none;
     align-self: center;
     
+}
+
+/* Team cards */
+.team_info_container{
+    display: flex;
+    min-height: 50vh;
+    min-width: 100vw;
+   
+    flex-wrap: wrap;
+}
+.team_card{
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 6px auto;
+    width: 350px;
+    min-height: 500px;
+    
+    /* border-width: 1px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: rgb(240, 243, 246);
+    justify-content: center;
+    
+}
+.team_card h3{
+    margin-right: auto;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    max-height: fit-content;
+    color: #1E90FF;
+}
+.team_card_name{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+.team_card_description{
+    text-align: left;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin: 5px 10px;
+}
+.team_photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-self: center;
+    padding-top: 0.5em;   
 }
 
