@@ -94,7 +94,7 @@ html{
 }
 
 .home_page{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(/main_assets/Team\ Photos/people\ talking.png);
+    /* background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(/main_assets/Team\ Photos/people\ talking.png); */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
