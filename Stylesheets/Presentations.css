@@ -55,4 +55,21 @@ html{
     align-self: center;
     
 }
-
+.presentation_container{
+    display: block;
+    margin: auto;
+    min-width: fit-content;
+    min-height: fit-content;
+    margin: 1vh 0;
+}
+#presentation_title{
+    width: 25%;
+    font-size: 1.5rem;
+    min-height: 2rem;
+    margin: auto;
+    text-align: center;
+}
+.slideshow{
+    display: flex;
+    justify-content: center;
+}
