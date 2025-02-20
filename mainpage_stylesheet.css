@@ -61,6 +61,7 @@ html{
     text-decoration: none;
     color: black;
     font-size: 1.25rem;  
+    padding: 0 10px;
 }
 .nav_list a:hover{
     color: #FF2400;
@@ -94,7 +95,8 @@ html{
 }
 
 .home_page{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(main_assets/Team\ Photos/people\ talking.png);
+    /* background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(main_assets/Team\ Photos/people\ talking.png); */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100% ),url(main_assets/Team\ Photos/people\ talking.png);
     background-size: cover;
     background-position: center;
     min-height: 100vh;

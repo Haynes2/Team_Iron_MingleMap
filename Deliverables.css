@@ -7,48 +7,32 @@
 body{
     font-family: "Roboto", sans-serif;
     background-color: white;
-    overflow-x: hidden;
 }
 
 html{
     scroll-behavior: smooth;
 }
-#header{
-    z-index: 1001;
-    
-}
 /* Nav Bar and logo */
-.logo_banner{
+#logo_banner{
     display: block;
     width: 100vw;
     height: auto;
-    text-align: center;
-    padding: 1vh;
-   
-}
-.logo_banner h1{
-    padding-bottom: 1vh;
-}
-.logo_banner h4{
-    padding-bottom: 0.5vh;
-    color: #FF2400;
+    border-color: black;
+    border-style: solid;
+    
 }
 .nav_bar{
     display: flex;
     width: 100vw;
     height: 6vh;
-    top: 0;
     position: sticky;
     justify-content: center;
     padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    background-color: transparent;
-    z-index: 1000;
+    background-color: white;
 }
 
 .nav_list{
     display: flex;
-    
     min-width: 44%;
     max-width: fit-content;
     height: 100%;
@@ -62,7 +46,6 @@ html{
     text-decoration: none;
     color: black;
     font-size: 1.25rem;  
-    padding: 0 10px;
 }
 .nav_list a:hover{
     color: #FF2400;
@@ -72,26 +55,35 @@ html{
     align-self: center;
     
 }
-/* End Navigation styling */
 
-/* Content containers */
+/* Weekly report */
+.weekly_container{
+    min-width: 100vw;
+    min-height: 12vh;
+    
+}
 
-/* main header */
-.main_content_header{
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    font-size: 2rem;
-    position: relative;
+.report_menu{
+    overflow: auto;
+    white-space: nowrap;
+    background-color: #e9ecef; 
+    border: 1px solid #e9ecef;  
+}
+.weekly_container h2{
+    margin-bottom: 0.5vh;
+    margin-left: 2vw;
+    color: blue;
+}
+.report_menu a {
+    display: inline-block;
+    color: black;
     text-align: center;
-}
-.main_content_header::before, .main_content_header::after{
-    content: "";
-    flex-grow: 1;
-    height: 1px;
-    background-color: #383838;
-    margin: 0 3rem;
-    align-self: center;
-}
+    padding: 14px;
+    text-decoration: none;
+    /* border-radius: 50px; */
+  }
+  .report_menu a:hover {
+    background-color: white;
+    color: #FF2400;
+  }
 
