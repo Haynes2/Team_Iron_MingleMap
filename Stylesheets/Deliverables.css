@@ -58,8 +58,10 @@ html{
 
 /* Weekly report */
 .weekly_container{
-    min-width: 100vw;
+    min-width: 94vw;
+    max-width: 94vw;
     min-height: 12vh;
+    margin: auto;
     
 }
 
@@ -67,7 +69,8 @@ html{
     overflow: auto;
     white-space: nowrap;
     background-color: #e9ecef; 
-    border: 1px solid #e9ecef;  
+    border: 1px solid #e9ecef; 
+    border-radius: 10px; 
 }
 .weekly_container h2{
     margin-bottom: 0.5vh;
