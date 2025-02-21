@@ -31,14 +31,32 @@
             Our Team's Presentations
         </p>
     </section>
+    
+       
+       
     <div class="presentation_container">
+        <div class="slide_buttons">
+            <button onclick="slideshowSwitch(event, 'Feasibility1', 'Feasibility Iteration 1')">
+                Feasibility Iteration 1
+            </button>
+            <button onclick="slideshowSwitch(event, 'Feasibility2', 'Feasibility Iteration 2')">
+                Feasibility Iteration 2
+            </button>
+        </div>
         <p id="presentation_title">
             Feasibility Iteration 1
         </p>
-        <div class="slideshow">
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQtICbRNBBHEAX-mUUdPGjGF2jsj6zUGw7AjX0q59wUBt3cUvougAs1IGjhmMVxlqD4QSdmCThNtYh0/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    
+        <div class="test_slideshow_container">
+            <!-- slide content -->
+             <!-- first slide shows on load -->
+            <div id="Feasibility1" class="slideshow">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQtICbRNBBHEAX-mUUdPGjGF2jsj6zUGw7AjX0q59wUBt3cUvougAs1IGjhmMVxlqD4QSdmCThNtYh0/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+            <div id="Feasibility2" class="inactiveSlide">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTYlW_9Rqa3GVrSp2UpdtfGKFgFI9lflChFbZiq0CnY-fP6vo4uk6YEXSNmQ7dFDIVzviuKo8uMKcbz/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
         </div>
     </div>
+    <script src="/scripts/presentationScripts.js"></script>
 </body>
 </html>

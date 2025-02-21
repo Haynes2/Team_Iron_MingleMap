@@ -1,60 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: "Roboto", sans-serif;
-    background-color: white;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-/* Nav Bar and logo */
-#logo_banner{
-    display: block;
-    width: 100vw;
-    height: auto;
-    border-color: black;
-    border-style: solid;
-    
-}
-.nav_bar{
-    display: flex;
-    width: 100vw;
-    height: 6vh;
-    position: sticky;
-    justify-content: center;
-    padding-top: 0.5vh;
-    background-color: white;
-}
-
-.nav_list{
-    display: flex;
-    min-width: 44%;
-    max-width: fit-content;
-    height: 100%;
-    justify-content: space-evenly;
-    background:  #e9ecef;
-    border-radius: 50px;
-    gap: 5px;
-}
-
-.nav_list a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.25rem;  
-}
-.nav_list a:hover{
-    color: #FF2400;
-}
-.nav_list li{
-    list-style: none;
-    align-self: center;
-    
-}
 .presentation_container{
     display: block;
     margin: auto;
@@ -69,7 +14,32 @@ html{
     margin: auto;
     text-align: center;
 }
+.inactiveSlide{
+    display: none;
+}
 .slideshow{
     display: flex;
     justify-content: center;
+    max-width: 100vw;
+    
+}
+.slide_buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+    gap: 2rem;
+}
+.slide_buttons button{
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5vh 0.5vw;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.slide_buttons button:hover{
+    background-color: #e9ecef;
+    color: #007BFF; 
 }
