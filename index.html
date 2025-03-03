@@ -5,25 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Iron - MingleMap</title>
     <link rel="stylesheet" href="Stylesheets/mainpage_stylesheet.css">
+    <link rel="stylesheet" href="MediaQueries/Mobile_mainpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
-<body>
-    <div class="home_page">
-        <header id="header">
+<body class="home_page">
+    <!-- <div class="home_page"> -->
+        <div id="header">
             <div class="logo_banner">
                 <h1>MingleMap</h1>
                 <h4>Explore, Chat, Connect - A New Way To Socialize</h4>
             </div>
 
-         </header>
+        </div>
+        <span class="material-icons" id="hamburger" onclick="toggleMenu()">menu</span>
      <div class="nav_bar">
              <ul class="nav_list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="The_Team.html">The Team</a></li>
-                <li><a href="The_Problem.html">The Problem</a></li>
+                <!-- <li><a href="The_Problem.html">The Problem</a></li> -->
                 <li><a href="Presentations.html">Presentations</a></li>
                 <li><a href="Deliverables.html">Deliverables</a></li>
             </ul>
         </div>
+        <div class="mobile_navbar" id="mobile_nav_container">
+            <ul class="mobile_navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="The_Team.html">The Team</a></li>
+                <!-- <li><a href="The_Problem.html">The Problem</a></li> -->
+                <li><a href="Presentations.html">Presentations</a></li>
+                <li><a href="Deliverables.html">Deliverables</a></li>
+            </ul>
+        </div>
+        
     
         <div class="main_page_grid">
             <div id="grid_problem" class="grid_text">
@@ -58,8 +72,8 @@
             </div>
     
         </div>
-    </div>
+    <!-- </div> -->
     
-    
+    <script src="scripts/navScript.js"></script>
 </body>
 </html>

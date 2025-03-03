@@ -3,23 +3,45 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+html{
+    /* scroll-behavior: smooth; */
+    max-width: 100vw;
+    
 }
 body{
     font-family: "Roboto", sans-serif;
     background-color: white;
+    max-width: 100%; 
+    overflow-x: hidden; 
+}
+.home_page{
+    /* background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(main_assets/Team\ Photos/people\ talking.png); */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100% ),url(../main_assets/Team\ Photos/people\ talking.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    /* min-height: 100vh; */
+    object-fit: contain;
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* overflow-x: hidden; */
+    
 }
 
-html{
-    scroll-behavior: smooth;
-}
+
 #header{
     z-index: 1001;
-    
+    max-width: 100%;
+    position: relative;
 }
 /* Nav Bar and logo */
 .logo_banner{
     display: block;
-    width: 100vw;
+    width: 100%;
+    
     height: auto;
     text-align: center;
     padding: 1vh;
@@ -35,7 +57,8 @@ html{
 }
 .nav_bar{
     display: flex;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     height: 6vh;
     top: 0;
     position: sticky;
@@ -44,6 +67,7 @@ html{
     padding-bottom: 0.5vh;
     background-color: transparent;
     z-index: 1000;
+    overflow-y: auto;
 }
 
 .nav_list{
@@ -71,6 +95,53 @@ html{
     align-self: center;
     
 }
+/* Mobile nav bar */
+#hamburger{
+    font-size: 48px;
+    cursor: pointer;
+    color: #e9ecef;
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 1001;
+}
+.mobile_navbar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 1001;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+}
+
+.mobile_navlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 2rem;
+    margin: auto auto;
+    
+}
+.mobile_navlist a{
+    text-decoration: none;
+    color: white;
+}
+.mobile_navlist a:hover{
+    color: #FF2400;
+    cursor: pointer;
+}
+.mobile_navlist li{
+    list-style: none;
+}
+
+
 /* End Navigation styling */
 
 /* Content containers */
@@ -94,21 +165,12 @@ html{
     align-self: center;
 }
 
-.home_page{
-    /* background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(main_assets/Team\ Photos/people\ talking.png); */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100% ),url(../main_assets/Team\ Photos/people\ talking.png);
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    max-width: 100vw;
-    overflow: hidden;
-    
-}
+
 
 .main_page_grid{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    
+    max-width: 100%;
     gap: 15px;
 }
 .grid_text{
@@ -171,5 +233,7 @@ position: relative;
     white-space: nowrap;
     text-shadow: 2px 0px 10px rgba(0, 0, 0, 1);
     color: white;
-    max-width: fit-content;
+    max-width: 100%;
 }
+
+

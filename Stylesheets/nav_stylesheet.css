@@ -7,15 +7,18 @@
 body{
     font-family: "Roboto", sans-serif;
     background-color: white;
-    overflow-x: hidden;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 html{
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 #header{
     z-index: 1001;
-    
+    max-width: 100%;
 }
 /* Nav Bar and logo */
 .logo_banner{
@@ -35,7 +38,7 @@ html{
 }
 .nav_bar{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 6vh;
     top: 0;
     position: sticky;
@@ -71,6 +74,52 @@ html{
     list-style: none;
     align-self: center;
     
+}
+
+/* Mobile nav bar */
+#hamburger{
+    font-size: 48px;
+    cursor: pointer;
+    color: black;
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 1001;
+}
+.mobile_navbar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 1001;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+}
+
+.mobile_navlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 2rem;
+    margin: auto auto;
+    
+}
+.mobile_navlist a{
+    text-decoration: none;
+    color: white;
+}
+.mobile_navlist a:hover{
+    color: #FF2400;
+    cursor: pointer;
+}
+.mobile_navlist li{
+    list-style: none;
 }
 /* End Navigation styling */
 

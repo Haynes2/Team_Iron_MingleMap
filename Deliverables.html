@@ -6,6 +6,8 @@
     <title>Team Iron - MingleMap</title>
     <link rel="stylesheet" href="Stylesheets/Deliverables.css">
     <link rel="stylesheet" href="Stylesheets/nav_stylesheet.css">
+    <link rel="stylesheet" href="MediaQueries/Mobile_deliverables.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header id="header">
@@ -19,7 +21,18 @@
         <ul class="nav_list">
             <li><a href="index.html">Home</a></li>
             <li><a href="The_Team.html">The Team</a></li>
-            <li><a href="The_Problem.html">The Problem</a></li>
+            <!-- <li><a href="The_Problem.html">The Problem</a></li> -->
+            <li><a href="Presentations.html">Presentations</a></li>
+            <li><a href="Deliverables.html">Deliverables</a></li>
+        </ul>
+    </div>
+
+    <span class="material-icons" id="hamburger" onclick="toggleMenu()">menu</span>
+    <div class="mobile_navbar" id="mobile_nav_container">
+        <ul class="mobile_navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="The_Team.html">The Team</a></li>
+            <!-- <li><a href="The_Problem.html">The Problem</a></li> -->
             <li><a href="Presentations.html">Presentations</a></li>
             <li><a href="Deliverables.html">Deliverables</a></li>
         </ul>
@@ -39,6 +52,24 @@
 
         </div>
     </div>
+
+    <div class="deliverable_pictures">
+        <!-- Use classes picture container left_pic or right_pic for side by side pics -->
+        <div class="picture_container left_pic" >
+            <h3>Current Process Flow</h3>
+            <img src="/main_assets/Deliverables/New MingleMap Current Process flow.jpeg" alt="Current process flow" class="image_format" >
+        </div>
+        <div class="picture_container right_pic" >
+            <h3>Solution Process Flow</h3>
+            <img src="/main_assets/Deliverables/New MingleMap Solution Process flow.jpeg" alt="Solution process flow" class="image_format" >
+        </div>
+        <div class="picture_container center_pic" >
+            <h3>Major Functional Components Diagram</h3>
+            <img src="/main_assets/Deliverables/MingleMap Major functional components Diagram.jpeg" alt="Major Functional Diagram" class="image_format" >
+        </div>
+    </div>
+   
     
+    <script src="scripts/navScript.js"></script>
 </body>
 </html>
