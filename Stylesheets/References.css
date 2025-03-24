@@ -1,0 +1,9 @@
+.references_container{
+    display: flex;
+    justify-content: center;
+    
+    min-height: 84vh;
+}
+.references_container h1{
+    padding-top: 10vh;
+}

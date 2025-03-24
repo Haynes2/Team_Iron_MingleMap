@@ -237,3 +237,21 @@ position: relative;
 }
 
 
+footer{
+    display: block;
+    text-align: center;
+    min-width: 100%;
+    min-height: 8vh;
+    bottom: 0;
+    margin-bottom: 1vh;
+}
+.copyright_tag{
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: white;
+}
+footer a{
+    color: white;
+}

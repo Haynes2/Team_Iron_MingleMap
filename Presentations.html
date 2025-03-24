@@ -24,6 +24,7 @@
             <!-- <li><a href="The_Problem.html">The Problem</a></li> -->
             <li><a href="Presentations.html">Presentations</a></li>
             <li><a href="Deliverables.html">Deliverables</a></li>
+            <li><a href="References.html">References</a></li>
 
         </ul>
     </div>
@@ -36,6 +37,7 @@
             <!-- <li><a href="The_Problem.html">The Problem</a></li> -->
             <li><a href="Presentations.html">Presentations</a></li>
             <li><a href="Deliverables.html">Deliverables</a></li>
+            <li><a href="References.html">References</a></li>
         </ul>
     </div>
     
@@ -58,9 +60,12 @@
             <button onclick="slideshowSwitch(event, 'Feasibility3', 'Feasibility Iteration 3')">
                 Feasibility Iteration 3
             </button>
+            <button onclick="slideshowSwitch(event, 'Feasibility4', 'Final Iteration 4')">
+                Feasibility Iteration 4
+            </button>
         </div>
         <p id="presentation_title">
-            Feasibility Iteration 3
+            Feasibility Iteration 4
         </p>
         <div class="test_slideshow_container">
             <!-- slide content -->
@@ -71,13 +76,36 @@
             <div id="Feasibility2" class="inactiveSlide">
                 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTYlW_9Rqa3GVrSp2UpdtfGKFgFI9lflChFbZiq0CnY-fP6vo4uk6YEXSNmQ7dFDIVzviuKo8uMKcbz/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
             </div>
-            <div id="Feasibility3" class=" slideshow">
+            <div id="Feasibility3" class=" inactiveSlide">
                 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSZoFstHeegqI7WV2V0hJREdE2azuu1TLeXqXr5qItfAYZ4nY54RRZJYtn9W-NKsEPcVqbMxWCycdG8/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+            <div id="Feasibility4" class=" slideshow">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSZoFstHeegqI7WV2V0hJREdE2azuu1TLeXqXr5qItfAYZ4nY54RRZJYtn9W-NKsEPcVqbMxWCycdG8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="presentation_container">
+        <div class="slide_buttons">
+            <button onclick="slideshowSwitch(event, 'Design1', 'Design Iteration 1')">
+                Design Iteration 1
+            </button>
+        </div>
+        <div class="test_slideshow_container">
+            <div id="Design1" class="slideshow">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQqDVAesrYpuC_VbKOVm5tcLu_t74Ki50mld9jSJNl9Vx9MbscluiSA1KqOfGnUaWFKtpwc39oXciHk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
             </div>
         </div>
     </div>
     <footer>
-        
+        <p class="copyright_tag">
+            Copyright Team Iron
+        </p>
+        <p>
+            <a href="http://www.odu.edu/">Old Dominion University</a>
+        </p>
+        <p>
+            <a href="http://www.cs.odu.edu/">CS Department</a>
+        </p>
     </footer>
     <script src="scripts/presentationScripts.js"></script>
     <script src="scripts/navScript.js"></script>
