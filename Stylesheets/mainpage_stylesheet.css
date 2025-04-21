@@ -235,6 +235,31 @@ position: relative;
     color: white;
     max-width: 100%;
 }
+.user_stories{
+    grid-column: 1/4;
+    grid-row: 4;
+    color: white;    
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.story{
+    margin-bottom: 2vh;
+    background-color:rgba(0,0,0,0.4) ;
+    backdrop-filter: blur(10px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    text-shadow: 2px 0px 10px rgba(0, 0, 0, 1);
+    padding: 1%;
+}
+.story ul{
+    list-style: none;
+}
+.story li{
+    font-size: 1.25rem;
+    
+}
 
 
 footer{
