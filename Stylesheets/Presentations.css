@@ -6,7 +6,7 @@
     min-width: fit-content;
     min-height: fit-content;
     margin: 1vh 0;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
 }
 #presentation_title{
     width: 25%;
@@ -40,6 +40,7 @@
     border-radius: 16px;
     cursor: pointer;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-top: 2%;
 }
 .slide_buttons button:hover{
     background-color: #e9ecef;
@@ -48,4 +49,11 @@
 footer{
     min-height: 20vh;
     min-width: 100vw;
+}
+.document_container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 100%;
+
 }
